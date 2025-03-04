@@ -1,0 +1,107 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   color:white;
+   background: #1f242d;
+   font-family: 'Poppins';
+}
+.header{
+    font-size: 20px;
+    display:flex;
+    justify-content: space-between;
+    margin:30px;
+}
+.header a{
+    display: block;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: color 0.3s ease,
+                transform 0.3s ease;
+}
+li{
+    list-style: none;
+    display: inline-block;
+
+}
+.menu{
+    margin-right:110px;
+}
+.header a:hover{
+    opacity: 0.8;
+    color:aqua;
+    transform : scale(1.2);
+}  
+.social-icons i{
+    display: inline-flex;
+  font-size: 1.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color:#1f242d;
+    align-items: center;
+    justify-content: center;
+   border :0.2rem solid white;
+   border-radius: 50%;
+   margin: 1rem 1rem 1.5rem 1rem;
+   margin-left:0;
+   transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+i:hover{
+    transform: scale(1.2);
+    background-color: aqua;
+    color:#1f242d;
+}
+.content {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 90px; /* Tạo khoảng cách giữa ảnh và text */
+    padding: 50px; /* Thêm padding để thoáng hơn */
+}
+
+.text-content {
+    width: 50%; /* Để text chiếm một phần màn hình */
+    max-width: 500px; /* Giới hạn chiều rộng */
+    margin-top:20px;
+}
+
+#avt {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%; /* Làm ảnh bo tròn */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+    border: 5px solid aqua; /* Viền nổi bật hơn */
+}
+h1{
+    font-size: 40px;
+}
+
+.text-content h1,h2,p{
+    margin-bottom:10px;
+}
+p{
+    font-size:20px;
+}
+button{
+    width: 30%;
+    height: 50px;
+    font-size: 16px;
+    font-weight:600;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: #00eaff; /* Màu xanh neon */
+    border-radius: 30px; /* Bo góc */
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00eaff; /* Hiệu ứng phát sáng */
+    letter-spacing: 0.7px; /* Giãn nhẹ chữ */
+    font-family: sans-serif;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+}
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00eaff;
+}
